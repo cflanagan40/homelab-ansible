@@ -1,0 +1,8 @@
+---
+- hosts: pihole
+  tasks:
+    - name: Set hostname
+      ansible.builtin.hostname:
+        name: pi-hole.house.box
+    - name: Update PiHole
+      ansible.builtin.command: pihole -up
