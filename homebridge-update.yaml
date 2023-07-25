@@ -1,0 +1,5 @@
+---
+- hosts: homebridge
+  tasks:
+    - name: Restart homebridge
+      ansible.builtin.command: hb-service restart
